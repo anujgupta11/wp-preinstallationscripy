@@ -80,7 +80,7 @@ fi
 
 $dockercli wp scaffold child-theme "${theme_name}-child" --parent_theme=$domain_name --author="$author_name"
 
-read -p "Do you want to activate sample themes in your WordPress ? [yn]" answer
+read -p "Do you want to activate sample child themes in your WordPress ? [yn]" answer
 
 if [[ $answer = y ]] ; then
 $dockercli wp theme activate "${theme_name}-child"
